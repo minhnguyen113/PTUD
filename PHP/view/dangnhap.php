@@ -1,7 +1,4 @@
-<?php
-session_start();
 
-?>
 
 <!doctype html>
 <html lang="en">
@@ -180,22 +177,17 @@ session_start();
 
 <?php
 
-if(isset($_POST['btn-dangnhap'])){
-  // $taikhoan = $_POST['phone'];
-  // $matkhau = $_POST['password'];
-  // $sql = "SELECT * from user where dienthoai ='".$taikhoan."' and matkhau ='".$matkhau."' LIMIT 1";
-  // $row = mysqli_query($conn, $sql);
-  // $count = mysqli_num_rows($row);
-  // if ( $count > 0){
-  //   $_SESSION['btn-dangnhap'] = $taikhoan; 
-  //   header("Location: index.php");
-  // }else{
-  //   echo "<script>alert('Đăng nhập thất bại')</script>";
-  //   header("Location: dangnhap.php");
-  // }
-  // print_r($_POST);
-  include_once("controller/cNguoiDung.php");
-  $p = new cNguoiDung();
-  $p->get1NguoiDung($_POST['phone'], $_POST['password']);
+
+session_start();
+
+if ((isset($_POST["btn-dangnhap"]))){ 
+    include_once("controller/cNguoiDung.php");
+    $phone = $_POST['phone'];
+    $password = $_POST['password'];
+
+    $p = new cNguoiDung();
+    $p->get1NguoiDung($phone, $password);
 }
+
+
 ?>

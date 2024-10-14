@@ -53,7 +53,7 @@
                     <a href="./view/contact.php" class="nav-item nav-link">Liên hệ</a>
                     <?php
                     if(!isset($_SESSION['dn'])){
-                        echo '<a href="./view/dangnhap.php" class="nav-item nav-link">Đăng nhập</a>';
+                        echo '<a href="view/dangnhap.php" class="nav-item nav-link">Đăng nhập</a>';
                     }
                     ?>
                 </div>

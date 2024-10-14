@@ -37,35 +37,42 @@
             <form action="#" method="post">
               <div class="form-group first">
                 <label for="username">Họ tên</label>
-                <input type="text" class="form-control" placeholder="Họ tên*" id="username">
+                <input type="text" class="form-control" placeholder="Họ tên*" id="username" name="username">
                 <span></span>
                 <small></small>
               </div>
 
               <div class="form-group first">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" placeholder="your-email@gmail.com*" id="email">
+                <input type="email" class="form-control" placeholder="your-email@gmail.com*" id="email" name="email">
                 <span></span>
                 <small></small>
               </div>
               
               <div class="form-group last mb-3">
                 <label for="text">Số điện thoại</label>
-                <input type="text" class="form-control" placeholder="Số điện thoại*" id="telephone">
+                <input type="text" class="form-control" placeholder="Số điện thoại*" id="telephone" name="telephone">
+                <span></span>
+                <small></small>
+              </div>
+
+              <div class="form-group last mb-3">
+                <label for="text">Địa chỉ </label>
+                <input type="text" class="form-control" placeholder="Địa chỉ" id="address" name="address">
                 <span></span>
                 <small></small>
               </div>
               <!-- password -->
               <div class="form-group last mb-3">
                 <label for="pass">Mật khẩu</label>
-                <input type="password" class="form-control" placeholder="Nhập Password" id="password">
+                <input type="password" class="form-control" placeholder="Nhập Password" id="password" name="password">
                 <span></span>
                 <small></small>
               </div>
 
               <div class="form-group last mb-3">
                 <label for="pass"> Nhập lại mật khẩu</label>
-                <input type="password" class="form-control" placeholder="Nhập Password" id="password-reset">
+                <input type="password" class="form-control" placeholder="Nhập Password" id="password-reset" name="pass-reset">
                 <span></span>
                 <small></small>
               </div>
@@ -178,7 +185,7 @@ a.already-signup:hover{
   form .form-group {
     position: relative;
     border-bottom: 2px solid #adadad;
-    margin: 40px 0;
+    margin: 26px 0;
   }
 
 </style>

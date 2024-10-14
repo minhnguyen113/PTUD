@@ -2,7 +2,8 @@
 class clsketnoi {
     public function MoKetNoi() {
         // Kết nối với cơ sở dữ liệu
-        $conn = mysqli_connect("localhost", "gym", "12345", "gym", "3306");
+        $conn = mysqli_connect("localhost", "root", "", "kiemtra");
+
         
         if($conn) {
             // Thiết lập bộ mã hóa ký tự

@@ -21,10 +21,10 @@ function showSuccess(input) {
 // check length
 function checkLength(input, min, max) {
     if (input.value.length < min) {
-        showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+        showError(input, `${getFieldName(input)}ít nhất phải có ${min} kí tự`);
         return false;
     } else if (input.value.length > max) {
-        showError(input, `${getFieldName(input)} must be less than ${max} characters`);
+        showError(input, `${getFieldName(input)} phải nhỏ hơn ${max} kí tự`);
         return false;
     } else {
         showSuccess(input);
